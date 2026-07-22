@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Still Hour Press publishes carefully crafted editions of enduring works in philosophy, literature, and intellectual history.">
+  <title>Still Hour Press</title>
+
+  <style>
+    :root {
+      --ink: #151515;
+      --paper: #f6f2e9;
+      --muted: #6d675d;
+      --rule: #b8b0a2;
+      --panel: rgba(255, 255, 255, 0.32);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background:
+        linear-gradient(rgba(246, 242, 233, 0.94), rgba(246, 242, 233, 0.94)),
+        repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 3px,
+          rgba(0, 0, 0, 0.012) 4px
+        );
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .site-shell {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 30px;
+    }
+
+    header {
+      text-align: center;
+      padding: 24px 16px 38px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .logo {
+      display: block;
+      width: min(230px, 65vw);
+      height: auto;
+      margin: 0 auto 20px;
+    }
+
+    .wordmark {
+      margin: 0;
+      font-size: clamp(2rem, 7vw, 4rem);
+      line-height: 1;
+      letter-spacing: 0.12em;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .tagline {
+      max-width: 610px;
+      margin: 18px auto 0;
+      color: var(--muted);
+      font-size: clamp(1rem, 2.5vw, 1.18rem);
+      font-style: italic;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--rule);
+      font-size: 0.82rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    nav a {
+      text-decoration: none;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    main {
+      padding: 36px 0 18px;
+    }
+
+    section {
+      padding: 34px clamp(20px, 5vw, 54px);
+      margin-bottom: 26px;
+      border: 1px solid rgba(98, 88, 72, 0.28);
+      background: var(--panel);
+    }
+
+    .section-label {
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: 0.78rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin: 0 0 16px;
+      font-size: clamp(1.55rem, 4vw, 2.35rem);
+      line-height: 1.25;
+      font-weight: 500;
+    }
+
+    .book-title {
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .author {
+      margin-top: -8px;
+      font-style: italic;
+    }
+
+    .status {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 5px 10px;
+      border: 1px solid var(--ink);
+      font-size: 0.76rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .contact-link {
+      display: inline-block;
+      margin-top: 8px;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 4px;
+    }
+
+    footer {
+      padding-top: 14px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    @media (max-width: 560px) {
+      .site-shell {
+        width: min(100% - 20px, 920px);
+        padding-top: 20px;
+      }
+
+      header {
+        padding-top: 18px;
+      }
+
+      nav {
+        gap: 15px;
+      }
+
+      section {
+        padding: 26px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="site-shell">
+    <header id="home">
+      <img class="logo" src="logo.png" alt="Still Hour Press hourglass logo">
+      <h1 class="wordmark">Still Hour Press</h1>
+      <p class="tagline">
+        Carefully crafted editions of enduring works in philosophy,
+        literature, and intellectual history.
+      </p>
+    </header>
+
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#catalog">Catalog</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+      <section id="catalog">
+        <p class="section-label">Current publication</p>
+        <h2 class="book-title">Thus Spoke Zarathustra</h2>
+        <p class="author">Friedrich Nietzsche</p>
+        <p>
+          A carefully edited English edition prepared for modern readers,
+          with considered typography, editorial guidance, and historical context.
+        </p>
+        <span class="status">Coming soon</span>
+      </section>
+
+      <section id="about">
+        <p class="section-label">About the press</p>
+        <h2>Books made for attentive reading.</h2>
+        <p>
+          Still Hour Press is an independent publisher focused on enduring works
+          that reward close attention and repeated reading. We favor clear,
+          restrained presentation and carefully prepared editions over large,
+          hurried catalogs.
+        </p>
+      </section>
+
+      <section id="contact">
+        <p class="section-label">Contact</p>
+        <h2>Still Hour Press</h2>
+        <p>
+          Publishing inquiries and general correspondence:
+        </p>
+        <a class="contact-link" href="mailto:contact@stillhourpress.com">
+          contact@stillhourpress.com
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      © 2026 Still Hour Press. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
